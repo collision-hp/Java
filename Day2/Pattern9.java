@@ -20,7 +20,6 @@ public class Pattern9 {
                 System.out.print(ch);
             }
             System.out.println();
-            
         }
     }
 }
