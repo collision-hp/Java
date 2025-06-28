@@ -1,5 +1,5 @@
 public class bubblesort {
-
+    //greater at the end
     /*public static void swap(int a,int b){ 
     in this method the arguments are passed by values so swapping inside the swap method doesn't affect the original array elements.
         int x=a;
