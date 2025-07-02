@@ -1,5 +1,7 @@
 public class bubblesort {
+    //opposite of insertion
     //greater at the end
+    //adjacent forward swapping
     /*public static void swap(int a,int b){ 
     in this method the arguments are passed by values so swapping inside the swap method doesn't affect the original array elements.
         int x=a;
@@ -14,7 +16,7 @@ public class bubblesort {
     public static void bubbleiterative(int arr[]){
         int n=arr.length;
         boolean swapped;
-        for(int i=0;i<n-1;i++){
+        for(int i=0;i<n;i++){
             swapped=false;
             for(int j=0;j<n-1-i;j++){
                 if (arr[j]>arr[j+1]){

@@ -1,22 +1,21 @@
 public class insertionsort {
-    /*logic like the card game arrangement
-    assume the 1st element is sorted
-    variable current -curr
-    compare the current element with the sorted part
-    sorted part gets increasing gradually and the unsorted part gets decreased
-    repeatedly compare the current element with its immediate previous element if less the swap of greater then stay*/
+    //opposite of bubble
+    //smallest at the start
+    //compare the current element with the previous elements
+    //adjacent backward swapping
+    public static void swap(int[] arr, int i, int j) {
+        int a = arr[i];
+        arr[i] = arr[j];
+        arr[j] = a;
+    }
     public static void insertionIterative(int []arr){ //O(n^2)
         int n=arr.length;
-        //we start from the 2nd element because 1st is assumed sorted
-        for(int i=1;i<n;i++){
-            int curr=arr[i];
-            int prev=i-1;
-            while(prev>=0 && arr[prev]>curr){// < change the less than to greater then for decending order
-                arr[prev+1]=arr[prev];
-                prev--;
+        for(int i=0;i<n;i++){
+            int j=i;
+            while(j>0 && arr[j-1]>arr[j]){
+                swap(arr, j-1, j);
+                j--;
             }
-            //because prev is decreased by one so now prev-1 is prev
-            arr[prev+1]=curr;
         }
     }
     public static void printArr(int[] arr){
