@@ -13,7 +13,7 @@ public class selectionsort {
 
     // O(n^2)
     public static void selectionIterative(int[] arr, int n) {
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n-1; i++) {
             int smallest = i;
             for (int j = i + 1; j < n; j++) {
                 if (arr[smallest] > arr[j]) {
