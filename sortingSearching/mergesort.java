@@ -17,29 +17,22 @@ public class mergesort {
         int i=low,j=mid+1,k=0;
         while(i<=mid && j<=high){
             if(arr[i]<arr[j]){
-                temparr[k]=arr[i];
-                i++;
+                temparr[k++]=arr[i++];
             }
             else{
-                temparr[k]=arr[j];
-                j++;
+                temparr[k++]=arr[j++];
             }
-            k++;
         }
         //adding the remaining elements of both arrays
         while(i<=mid){
-            temparr[k]=arr[i];
-            k++;
-            i++;
+            temparr[k++]=arr[i++];
         }
         while(j<=high){
-            temparr[k]=arr[j];
-            k++;
-            j++;
+            temparr[k++]=arr[j++];
         }
         //now we need to copy the temporary array to the original array
-        for(int x=low;x<k;x++){
-            arr[x]=temparr[x];
+        for(int x=0;x<k;x++){
+            arr[low+x]=temparr[x];
         }
     }
     public static void printArr(int[] arr){

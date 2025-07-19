@@ -19,35 +19,35 @@ public class quicksort {
         if (low == high) {
             return;
         }
-        int s = low;
-        int e = high;
-        int m = s + (e - s) / 2;
+        int i = low;
+        int j = high;
+        int m = i + (j - i) / 2; //mid
         int pivot = arr[m];
-        while (s <= e) {
-            //check untill the condition is true
-            while (arr[s] < pivot) {
-                s++;
+        while (i <=j) {
+            // check untill the condition is true
+            while (arr[i] < pivot) {
+                i++;
             }
-            while (arr[e] > pivot) {
-                e--;
+            while (arr[j] > pivot) {
+               j--;
             }
-            //if the conditions are violated the if condition is implemented
-            if (s <= e) {
-                int temp = arr[s];
-                arr[s] = arr[e];
-                arr[e] = temp;
-                s++;
-                e++;
+            // if the conditions are violated the if condition is implemented
+            if (i <= j) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+                j++;
             }
         }
-        //now the pivot element is at the correct position so sort the 2 halves
-
-        quick(arr,low,e);
-        quick(arr,s,high);
+        // now the pivot element is at the correct position so sort the 2 halves
+        quick(arr, low, j);
+        quick(arr, i, high);
     }
+
     public static void main(String[] args) {
-        int [] arr={5,6,3,2,9};
-        quick(arr,0,arr.length-1);
+        int[] arr = { 5, 6, 3, 2, 9 };
+        quick(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
 }
