@@ -31,5 +31,6 @@ public class switchcase {
             case 5->System.out.println("E");
             default->System.out.println("Fail");
         }
+        ni.close();
     }
 }

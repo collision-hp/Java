@@ -20,5 +20,6 @@ public class nestedswitch {
             }
             default -> System.out.println("Invalid empId");
         }
+        ni.close();
     }
 }

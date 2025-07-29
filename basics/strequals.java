@@ -11,5 +11,6 @@ public class strequals {
         String b="Virat";
         System.out.println(a==b);
         System.out.println(a.equals(b));
+        ni.close();
     }
 }
