@@ -6,6 +6,8 @@ public class Priority_Queue {
         pq.offer(9);
         pq.offer(5);
         pq.offer(6);
+        pq.offer(7);
+        pq.offer(8);
 
         // by default it is the min-heap (highest priority is given to minimum element)
         System.out.println(pq);
