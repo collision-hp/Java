@@ -1,7 +1,7 @@
 package collection_Frameworks;
 import java.util.*;
 
-public class Collection_Class {
+public class CollectionClass {
     public static void main(String[] args) {
         //used on top of collection framework 
         //to implement operations like if an element is present in the collection or not,smallest and largest element, one element is repeated how many times
@@ -14,7 +14,6 @@ public class Collection_Class {
         Collections.sort(list);
         System.out.println(list);
         Collections.sort(list,Comparator.reverseOrder());
-        System.out.println(Collections.min(list));
-        
+        System.out.println(Collections.min(list));   
     }
 }
