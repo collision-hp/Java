@@ -1,7 +1,8 @@
 package collection_Frameworks;
 import java.util.*;
-public class Priority_Queue {
+public class Queue_PriorityQueue {
     public static void main(String[] args) {
+        //FIFO
         Queue<Integer> pq=new PriorityQueue<>();
         pq.offer(9);
         pq.offer(5);

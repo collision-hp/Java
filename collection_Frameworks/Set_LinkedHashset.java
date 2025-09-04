@@ -2,10 +2,10 @@ package collection_Frameworks;
 
 import java.util.*;
 
-public class Linked_Hashset {
+public class Set_LinkedHashset {
     public static void main(String[] args) {
 
-        // here the order is maintained in ehich they are added
+        // here the order is maintained in which they are added
         Set<Integer> hashset = new LinkedHashSet<>();
 
         hashset.add(32);

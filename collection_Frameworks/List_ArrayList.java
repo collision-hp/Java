@@ -1,6 +1,6 @@
 package collection_Frameworks;
 import java.util.*;
-public class Array_List {
+public class List_ArrayList {
     public static void main(String[] args) {
         List <String> student=new ArrayList<>();
         student.add("Raj");

@@ -1,6 +1,6 @@
 package collection_Frameworks;
 import java.util.*;
-public class Map_Collection {
+public class Map_HashMap {
     public static void main(String[] args) {
         Map<String,Integer> numbers=new HashMap<>();
         //Keys are always unique
@@ -35,6 +35,10 @@ public class Map_Collection {
             System.out.println(e.getKey());
             System.out.println(e.getValue());
         }
+        //  OR
+        numbers.forEach((letter,numb)->System.out.println(letter+" "+numb));
+
+        //TO GET KEYS OR VALUES only
         for(String key: numbers.keySet()){
             System.out.println(key);
         }

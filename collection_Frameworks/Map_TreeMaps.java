@@ -1,6 +1,6 @@
 package collection_Frameworks;
 import java.util.*;
-public class Tree_Maps {
+public class Map_TreeMaps {
     public static void main(String[] args) {
         //sorted version of the map
         //it is sorted on the basis of keys (i.e String here) that is alphabetically according to ascii value

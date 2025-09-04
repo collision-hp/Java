@@ -1,11 +1,14 @@
 package collection_Frameworks;
 import java.util.*;
 
-public class Hash_Set {
+public class Set_HashSet {
     public static void main(String[] args) {
 
         //set prints only the unique values not the repetitive values
         //order is not defined printed in random order
+        //HashSet class implements Set interface
+        //porperties if set can be implemented in hashset now
+        //nature will be hashset
         Set <Integer> hashset=new HashSet<>();
 
         hashset.add(32);

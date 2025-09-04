@@ -1,6 +1,6 @@
 package collection_Frameworks;
 import java.util.*;
-public class Tree_Set {
+public class Set_TreeSet {
     public static void main(String[] args) {
         // to arrange all the elements in sorted manner along with set properties
         // binary search tree is implemented
