@@ -1,10 +1,10 @@
 //quick sort is slightly better than merge sort
 //6,2,5,4,7,9,1,3
 //pick up a pivot (any element by your choice) we choose middle
-//let pivot is the 1st element of the array -4
+//let pivot is the middle element of the array -> 4
 //smaller on the left(2,1,3) and large on the right(6,5,7,9)
 //(2,1,3) is an individual array
-//again pick up the pivot- 1
+//again pick up the pivot -> 1
 //{2},{3} are individual arrays so no need to sort them
 //similarly (6,5,7,9) 
 //we'll be using lows and high pointers to know on which part of the array we're working on.

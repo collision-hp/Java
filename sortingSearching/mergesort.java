@@ -32,7 +32,7 @@ public class mergesort {
         }
         //now we need to copy the temporary array to the original array
         for(int x=0;x<k;x++){
-            arr[low+x]=temparr[x];
+            arr[low++]=temparr[x];
         }
     }
     public static void printArr(int[] arr){
