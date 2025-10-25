@@ -8,31 +8,31 @@ public class Set_HashSet {
         //order is not defined printed in random order
         //HashSet class implements Set interface
         //properties of set can be implemented in hashset now
-        //nature will be hashset
-        Set <Integer> hashset=new HashSet<>();
+        //set is the Set reference variable.
+        Set <Integer> set=new HashSet<>();
 
-        hashset.add(32);
-        hashset.add(67);
-        hashset.add(32);
-        hashset.add(12);
-        hashset.add(65);
+        set.add(32);
+        set.add(67);
+        set.add(32);
+        set.add(12);
+        set.add(65);
 
-        System.out.println(hashset);
+        System.out.println(set);
 
         //to remove an element
-        hashset.remove(65);
-        System.out.println(hashset);
+        set.remove(65);
+        System.out.println(set);
         //to check whether the element is there in the set or not it returns a boolean value
-        System.out.println(hashset.contains(32));
+        System.out.println(set.contains(32));
 
         //to check whether our set is empty or not returns a boolean value
-        System.out.println(hashset.isEmpty());
+        System.out.println(set.isEmpty());
 
         //to check how many elements are present in the set
-        System.out.println(hashset.size());
+        System.out.println(set.size());
 
         //to clear the set
-        hashset.clear();
-        System.out.println(hashset);
+        set.clear();
+        System.out.println(set);
     }
 }
