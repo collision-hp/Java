@@ -8,7 +8,6 @@ public class Stack_Collection {
         animal.push("Wolf");
         animal.push("Panther");
         System.out.println(animal);
-
         //to get which is the last element at the top
         System.out.println(animal.peek());
         animal.pop();
